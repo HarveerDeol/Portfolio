@@ -1,0 +1,154 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Harveer Deol} \\ \vspace{1pt}
+  \small 780-802-4005 $|$ Edmonton, AB $|$
+  \href{mailto:harveerdeol53@gmail.com}{harveerdeol53@gmail.com} $|$
+  \href{https://harveerdeol.dev}{harveerdeol.dev}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Alberta}{Sep. 2022 -- Present}
+    {Bachelor of Science in Computer Science}{Edmonton, AB}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Developer}{Jan. 2026 -- Present}
+  {SAPAA (Stewards of Alberta's Protected Areas Association)}{Edmonton, AB}
+\resumeItemListStart
+  \resumeItem{Evaluated \textbf{15+ cloud database platforms} using cost analysis, scalability testing, and \textbf{Google Workspace API} compatibility to select a production-ready solution within nonprofit constraints}
+  \resumeItem{Designed and executed a full \textbf{Microsoft Access to PostgreSQL migration} using \textbf{SQL, Python migration scripts, schema normalization, and automated validation}, reducing data synchronization errors by \textbf{95\%}}
+  \resumeItem{Refactored an existing \textbf{mobile safety inspection MVP} by integrating PostgreSQL-backed historical data, updating business logic, and implementing revised inspection workflows used by field staff}
+  \resumeItem{Created technical documentation and led onboarding for \textbf{20+ users}, presenting system architecture and migration outcomes to the board for production deployment approval}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Software Developer}{Sep. 2025 -- Dec. 2025}
+  {Davidson Gregory Law Firm}{Edmonton, AB}
+\resumeItemListStart
+  \resumeItem{Built an \textbf{automated legal document review pipeline} using \textbf{Python, LangChain, and LLM APIs}, reducing manual disclosure review time by \textbf{70\%}}
+  \resumeItem{Developed a \textbf{scheduled legal research automation system} that retrieves, summarizes, and categorizes Canadian criminal cases from \textbf{CanLII} on a weekly basis}
+  \resumeItem{Implemented an \textbf{NLP-based transcript analysis tool} to detect contradictions across witness statements and generate visual inconsistency reports for trial preparation}
+  \resumeItem{Deployed secure AI workflows on \textbf{AWS} using encrypted storage and access controls to ensure compliance with solicitor-client privilege}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Job Application Tracker} $|$ \emph{Next.js, React, PostgreSQL, AWS, LangChain}}{Dec. 2025 -- Jan. 2026}
+\resumeItemListStart
+  \resumeItem{Developed a \textbf{full-stack web application} using \textbf{Next.js, React, and PostgreSQL} to track job applications and analytics for \textbf{200+ active users}}
+  \resumeItem{Integrated a \textbf{LangChain-powered resume optimization pipeline} that analyzes job descriptions and dynamically matches user experience to role requirements}
+  \resumeItem{Implemented an \textbf{event-driven notification system} using \textbf{AWS SNS and EventBridge} to automate email and SMS follow-ups}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Transformer Language Model} $|$ \emph{Python, PyTorch, NumPy, React}}{Jul. 2025 -- Aug. 2025}
+\resumeItemListStart
+  \resumeItem{Implemented a \textbf{transformer-based language model from scratch} in \textbf{PyTorch}, including multi-head self-attention, positional encoding, and feed-forward layers}
+  \resumeItem{Trained the model on \textbf{50M tokens} using custom optimization and backpropagation logic, achieving \textbf{85\% accuracy}}
+  \resumeItem{Built a \textbf{React-based visualization interface} to demonstrate text generation and attention weight distributions across model layers}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{HTS Classification Tool} $|$ \emph{Python, LangChain, AWS, PostgreSQL, FastAPI}}{Oct. 2025 -- Nov. 2025}
+\resumeItemListStart
+  \resumeItem{Developed an \textbf{AI-powered tariff classification system} using \textbf{retrieval-augmented generation (RAG)} to classify international trade goods with \textbf{92\% accuracy}}
+  \resumeItem{Designed a \textbf{vector embedding database} enabling semantic search across \textbf{34,000+ tariff classifications}}
+  \resumeItem{Deployed a \textbf{scalable FastAPI backend on AWS}, handling \textbf{1,000+ daily requests} with sub-2-second latency}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  \textbf{Programming Languages}: JavaScript, Python, C, SQL, HTML, CSS \\
+  \textbf{Software Engineering Practices}: Object-Oriented Design, Debugging, Code Review, Testing, Documentation \\
+  \textbf{Frameworks \& Platforms}: React, Next.js, Node.js, Express, FastAPI, LangChain, AWS \\
+  \textbf{Databases \& Backend}: PostgreSQL, SQL Schema Design, Data Migration, REST APIs, GraphQL \\
+  \textbf{DevOps \& Tooling}: Git, Docker, AWS, CI/CD Pipelines, Cloud Deployment, Environment Configuration \\
+  }}
+\end{itemize}
+
+
+\end{document}

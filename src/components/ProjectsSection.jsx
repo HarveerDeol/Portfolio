@@ -3,32 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Job Applications Tracker",
+    description: "A useful tool for job hunters to track their applications and tailor their resume using AI",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Langchain", "Supabase", "AI"],
+    demoUrl: "https://job-app-harveer.xyz/",
+    githubUrl: "https://github.com/HarveerDeol/Job_App.git",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: " AI HTS-Code Classifier",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A CRUD app that uses a RAG to help customs broker classify a good HTS code with only a ambiguous description",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Next.js", "RAG", "AWS", "AI"],
+    demoUrl: "https://hts-classifier.xyz/",
+    githubUrl: "https://github.com/HarveerDeol/HTS_Classification_Frontend.git",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "LLM from Scratch",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "A completely functioning LLM built from the ground up using GPT-2 pretrained weights with a demonstrative UI",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Python", "AI/ML", "NLP", "React"],
+    demoUrl: "https://llm-frontend-g4oj.vercel.app/",
+    githubUrl: "https://github.com/HarveerDeol/LLM-Bottom-Up.git",
   },
 ];
 
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/HarveerDeol"
           >
             Check My Github <ArrowRight size={16} />
           </a>
