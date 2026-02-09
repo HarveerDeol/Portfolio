@@ -56,7 +56,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:harveerdeol53@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     harveerdeol53@gmail.com
@@ -70,10 +70,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+17808024005"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (780) 802-4005
+                    (780) 802-4005
                   </a>
                 </div>
               </div>
